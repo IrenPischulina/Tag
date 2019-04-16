@@ -32,3 +32,13 @@ void Test::testInitMatrix()
         }
     }
 }
+
+void Test::testSetMatrix()
+{
+    Game *game = new Game();
+    int **tmp = game -> getMatrix();
+    tmp[0][0] = -10;
+    game -> setMatrix(tmp);
+    tmp = game -> getMatrix();
+    QCOMPARE(tmp[0][0], -10);
+}

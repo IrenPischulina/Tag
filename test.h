@@ -18,6 +18,7 @@ private slots:
     void gameClassCreationTest();
     void testGetMatrix();
     void testInitMatrix();
+    void testSetMatrix();
 };
 
 #endif // TEST_H
