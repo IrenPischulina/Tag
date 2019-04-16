@@ -19,6 +19,7 @@ private slots:
     void testGetMatrix();
     void testInitMatrix();
     void testSetMatrix();
+    void testMoveDown();
 };
 
 #endif // TEST_H

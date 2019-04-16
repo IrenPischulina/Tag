@@ -24,3 +24,14 @@ int **Game::getMatrix()
 {
     return matrix;
 }
+
+void Game::setMatrix(int **matr)
+{
+    for ( int i = 0; i < 4; i ++)
+    {
+        for ( int j = 0; j < 4; j ++)
+        {
+            matrix[i][j] = matr[i][j];
+        }
+    }
+}

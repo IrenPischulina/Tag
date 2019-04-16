@@ -42,3 +42,12 @@ void Test::testSetMatrix()
     tmp = game -> getMatrix();
     QCOMPARE(tmp[0][0], -10);
 }
+
+void Test::testMoveDown()
+{
+    Game *game = new Game();
+    game -> moveDown();
+    int **tmp = game -> getMatrix();
+    QCOMPARE(tmp[2][3], 0);
+    QCOMPARE(tmp[3][3], 12);
+}

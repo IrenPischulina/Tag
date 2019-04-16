@@ -9,6 +9,7 @@ class Game: public QObject
 public:
     Game();
     int **getMatrix();
+    void setMatrix(int **matr);
 private:
     int **matrix;
 };
