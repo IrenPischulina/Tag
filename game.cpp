@@ -69,3 +69,20 @@ void Game::moveUp()
         }
     }
 }
+
+void Game::moveRight()
+{
+    for ( int i = 0; i < 4; i ++)
+    {
+        for ( int j = 0; j < 4; j ++)
+        {
+            if(matrix[i][j] == 0 && j > 0)
+            {
+                int temp;
+                temp = matrix[i][j];
+                matrix[i][j] = matrix[i][j - 1];
+                matrix[i][j - 1] = temp;
+            }
+        }
+    }
+}
