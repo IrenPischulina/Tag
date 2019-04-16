@@ -17,6 +17,7 @@ signals:
 private slots:
     void gameClassCreationTest();
     void testGetMatrix();
+    void testInitMatrix();
 };
 
 #endif // TEST_H
