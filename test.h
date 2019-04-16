@@ -11,7 +11,8 @@ public:
 
 signals:
 
-public slots:
+private slots:
+    void gameClassCreationTest();
 };
 
 #endif // TEST_H
