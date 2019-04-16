@@ -22,6 +22,7 @@ private slots:
     void testMoveDown();
     void testMoveUp();
     void testMoveRight();
+    void testMoveLeft();
 };
 
 #endif // TEST_H
