@@ -11,6 +11,7 @@ public:
     int **getMatrix();
     void setMatrix(int **matr);
     void moveDown();
+    void moveUp();
 private:
     int **matrix;
 };
