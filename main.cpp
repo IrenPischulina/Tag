@@ -1,8 +1,8 @@
 #include <QCoreApplication>
+#include <QtTest/QTest>
+#include "test.h"
 
 int main(int argc, char *argv[])
 {
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
+    QTest::qExec(new Test, argc, argv);
 }

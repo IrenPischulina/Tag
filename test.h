@@ -3,6 +3,8 @@
 
 #include <QObject>
 
+#include "game.h"
+
 class Test : public QObject
 {
     Q_OBJECT
