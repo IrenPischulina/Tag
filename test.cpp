@@ -61,3 +61,12 @@ void Test::testMoveUp()
     QCOMPARE(tmp[2][3], 12);
     QCOMPARE(tmp[3][3], 0);
 }
+
+void Test::testMoveRight()
+{
+    Game *game = new Game();
+    game -> moveRight();
+    int **tmp = game -> getMatrix();
+    QCOMPARE(tmp[3][2], 0);
+    QCOMPARE(tmp[3][3], 15);
+}
