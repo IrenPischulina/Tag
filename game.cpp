@@ -35,3 +35,21 @@ void Game::setMatrix(int **matr)
         }
     }
 }
+
+void Game::moveDown()
+{
+    for ( int i = 0; i < 4; i ++)
+    {
+        for ( int j = 0; j < 4; j ++)
+        {
+            if(matrix[i][j] == 0 && i > 0)
+            {
+                int temp;
+                temp = matrix[i][j];
+                matrix[i][j] = matrix[i - 1][j];
+                matrix[i - 1][j] = temp;
+            }
+        }
+    }
+
+}

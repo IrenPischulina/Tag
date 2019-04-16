@@ -10,6 +10,7 @@ public:
     Game();
     int **getMatrix();
     void setMatrix(int **matr);
+    void moveDown();
 private:
     int **matrix;
 };
