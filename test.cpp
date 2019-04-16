@@ -28,7 +28,7 @@ void Test::testInitMatrix()
             if(i == 3 && j == 3)
                 QCOMPARE(tmp[i][j], 0);
             else
-                QCOMPARE(tmp[i][j], i+j+1);
+                QCOMPARE(tmp[i][j], ( i * 4 ) + j + 1);
         }
     }
 }
