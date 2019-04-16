@@ -13,6 +13,7 @@ public:
     void moveDown();
     void moveUp();
     void moveRight();
+    void moveLeft();
 private:
     int **matrix;
 };

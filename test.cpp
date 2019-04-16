@@ -77,6 +77,6 @@ void Test::testMoveLeft()
     game -> moveRight();
     game -> moveLeft();
     int **tmp = game -> getMatrix();
-    QCOMPARE(tmp[2][3], 15);
+    QCOMPARE(tmp[3][2], 15);
     QCOMPARE(tmp[3][3], 0);
 }
