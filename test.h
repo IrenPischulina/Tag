@@ -2,6 +2,7 @@
 #define TEST_H
 
 #include <QObject>
+#include <QTest>
 
 #include "game.h"
 
@@ -15,6 +16,7 @@ signals:
 
 private slots:
     void gameClassCreationTest();
+    void testGetMatrix();
 };
 
 #endif // TEST_H
