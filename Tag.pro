@@ -1,4 +1,4 @@
-QT -= gui
+QT += gui
 QT += testlib
 
 CONFIG += c++11 console

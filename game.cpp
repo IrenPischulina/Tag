@@ -48,6 +48,7 @@ void Game::moveDown()
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[i - 1][j];
                 matrix[i - 1][j] = temp;
+                return;
             }
         }
     }
@@ -65,6 +66,7 @@ void Game::moveUp()
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[i + 1][j];
                 matrix[i + 1][j] = temp;
+                return;
             }
         }
     }
@@ -82,6 +84,7 @@ void Game::moveRight()
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[i][j - 1];
                 matrix[i][j - 1] = temp;
+                return;
             }
         }
     }
@@ -99,6 +102,7 @@ void Game::moveLeft()
                 temp = matrix[i][j];
                 matrix[i][j] = matrix[i][j + 1];
                 matrix[i][j + 1] = temp;
+                return;
             }
         }
     }
